@@ -1,0 +1,50 @@
+body{
+   margin: 0;
+  padding: 0;
+  font-family: "shrikhand";
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+section{
+  background-color: #353535;
+  height: 1280px;
+  line-height: 700px;
+}
+
+.loader{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.loader-quart{
+
+  border-radius: 50px;
+  border: 6px solid rgb(153,226,208,.9);
+}
+.loader-quart:after{
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-radius: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+  
+}
